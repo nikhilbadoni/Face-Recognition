@@ -109,7 +109,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-Silent-Face-Anti-Spoofing
+Silent-Face-Anti-Spoofing/
 
 # Spyder project settings
 .spyderproject
