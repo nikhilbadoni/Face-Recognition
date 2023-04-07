@@ -35,11 +35,11 @@ class App:
         if not os.path.exists(self.db_dir):
             os.mkdir(self.db_dir)
 
-        self.log_path = './log.txt'
+        self.log_path = './logs.txt'
 
     def add_webcam(self, label):
         if 'cap' not in self.__dict__:
-            self.cap = cv2.VideoCapture(2)
+            self.cap = cv2.VideoCapture(0)
 
         self._label = label
         self.process_webcam()
@@ -60,7 +60,7 @@ class App:
 
         label = test(
                 image=self.most_recent_capture_arr,
-                model_dir='/home/phillip/Desktop/todays_tutorial/27_face_recognition_spoofing/code/face-attendance-system/Silent-Face-Anti-Spoofing/resources/anti_spoof_models',
+                model_dir='/Users/nikhilbadoni/PycharmProjects/faceattendance/face-attendance-system/Silent-Face-Anti-Spoofing/resources/anti_spoof_models',
                 device_id=0
                 )
 
@@ -83,7 +83,7 @@ class App:
 
         label = test(
                 image=self.most_recent_capture_arr,
-                model_dir='/home/phillip/Desktop/todays_tutorial/27_face_recognition_spoofing/code/face-attendance-system/Silent-Face-Anti-Spoofing/resources/anti_spoof_models',
+                model_dir='/Users/nikhilbadoni/PycharmProjects/faceattendance/face-attendance-system/Silent-Face-Anti-Spoofing/resources/anti_spoof_models',
                 device_id=0
                 )
 
